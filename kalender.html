@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalender — Sithi Vinayagar Temple</title>
+<meta name="description" content="Kommende poojaer og arrangementer hos 7fjell Sri Ananda Sithi Vinayagar Temple i Bergen. Se datoer, tider og upayam for juli måned.">
+<meta name="theme-color" content="#2e3358">
+<link rel="icon" href="assets/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Sithi Vinayagar Temple logo">
+      <span class="brand-text"><b>Sithi Vinayagar</b><span>Bergen Hindu Sabha</span></span>
+    </a>
+    <nav class="nav-desktop">
+      <a href="index.html">Forside</a>
+      <a href="informasjon.html">Informasjon</a>
+      <a href="kalender.html" class="active">Kalender</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+    <div class="nav-cta">
+      <div class="lang-switch"><a href="kalender.html" class="active">NO</a><a href="tamil/kalender.html">தமிழ்</a></div>
+      <a href="kontakt.html" class="btn btn-primary">Ta kontakt</a>
+      <button class="hamburger" aria-label="Meny"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<aside class="drawer">
+  <div class="drawer-top"><button class="drawer-close" aria-label="Lukk">&times;</button></div>
+  <a href="index.html" class="d-link">Forside</a>
+  <a href="informasjon.html" class="d-link">Informasjon</a>
+  <a href="kalender.html" class="d-link">Kalender</a>
+  <a href="kontakt.html" class="d-link">Kontakt</a>
+  <div class="lang-switch"><a href="kalender.html" class="active">Norsk</a><a href="tamil/kalender.html">தமிழ்</a></div>
+</aside>
+<div class="scrim"></div>
+
+<section class="hero" style="min-height:48vh">
+  <div class="hero-bg"><img src="assets/img-diya.jpg" alt="Oljelampe / diya"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow reveal">Kalender</span>
+      <h1 class="reveal" style="font-size:clamp(2.2rem,5vw,3.6rem)">Poojaer og arrangementer</h1>
+      <p class="reveal">Bli med på spennende og meningsfulle arrangementer hos Sithi Vinayagar Temple. Fra religiøse seremonier til kulturelle arrangementer og fellesskapsaktiviteter — feiringer av hinduismen som fremmer fellesskapet.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow reveal">Juli måned</span>
+    <h2 class="section-title reveal" style="margin-bottom:.6em">Poojaer som skjer i juli</h2>
+    <div class="event-list" id="event-list-full"></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <h2>Lurer du på noe?</h2>
+      <p>Ta kontakt via e-post eller kontaktskjemaet vårt, så hjelper vi deg gjerne.</p>
+      <div class="hero-actions">
+        <a href="mailto:styret@bergenhindusabha.no" class="btn btn-saffron">Send e-post</a>
+        <a href="kontakt.html" class="btn btn-ghost">Kontakt</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="fb-head"><img src="assets/logo.png" alt=""><b>7fjell Sri Ananda<br>Sithi Vinayagar Temple</b></div>
+        <p>Storetveitvegen 5, 5067 Bergen. Et samlingspunkt for hinduer på Vestlandet siden 1990.</p>
+        <a href="https://www.facebook.com/profile.php?id=100064255646668" style="color:var(--saffron-soft);font-weight:600">Facebook →</a>
+      </div>
+      <div class="footer-col"><h4>Sider</h4><a href="index.html">Forside</a><a href="informasjon.html">Informasjon</a><a href="kalender.html">Kalender</a><a href="kontakt.html">Kontakt</a></div>
+      <div class="footer-col"><h4>Kontakt</h4><a href="tel:+4740086314">400 86 314</a><a href="mailto:styret@bergenhindusabha.no">styret@bergenhindusabha.no</a><p>Storetveitvegen 5<br>5067 Bergen</p></div>
+      <div class="footer-col"><h4>Medlemskap</h4><p>Bankkonto: 1506 89 74930</p><p>Medlemskonto: 1506 90 04242</p><p>kr. 200,-/medlem/år</p><p>Vipps: #574309</p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Bergen Hindu Sabha. Alle rettigheter reservert. · Org nr: 982 931 592</span>
+      <span>Nettside levert av <a href="https://dmarketing.no">Dietrichs Marketing</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+window.POOJAS = [
+  { day:'03', mon:'JUL', wd:'Fredag', title:'Sangadahara Sathurthi', up:'kr. 600 / 750',
+    details:'Sangalpam 17.45, etterfulgt av abishekam. Pujaen starter kl. 19.00 og avsluttes med at Lord Ganesha bæres rundt inne i templet.' },
+  { day:'10', mon:'JUL', wd:'Fredag', title:'Karthikai', up:'kr. 600 / 750',
+    details:'Sangalpam 17.45, etterfulgt av abishekam. Pujaen starter kl. 19.30 og avsluttes med at Lord Muruga bæres rundt inne i templet.' },
+  { day:'16', mon:'JUL', wd:'Torsdag', title:'Aadipirappu', up:'',
+    details:'Spesiell grøt serveres i templet i dag. Aadi Pirappu er første dag i måneden Aadi — monsun-festivalen — feiret på den første dagen i den tamilske måneden «Adi» (midt-juli til midt-august). Festivalen hyller vannets livgivende egenskaper.' },
+  { day:'17', mon:'JUL', wd:'Fredag', title:'Sathurthi', up:'kr. 600 / 750',
+    details:'Sangalpam 17.45, etterfulgt av abishekam. Pujaen starter kl. 19.00 og avsluttes med at Lord Ganesha bæres rundt inne i templet.' },
+  { day:'28', mon:'JUL', wd:'Tirsdag', title:'Pournami', up:'kr. 600 / 750',
+    details:'Sangalpam 17.45, etterfulgt av abishekam. Pujaen starter kl. 19.30 og avsluttes med at Goddess Durga bæres rundt inne i templet.' }
+];
+(function(){
+  var el = document.getElementById('event-list-full'); if(!el) return;
+  el.innerHTML = window.POOJAS.map(function(p){
+    return '<div class="event detailed reveal">'+
+      '<div class="date"><b>'+p.day+'</b><span>'+p.mon+'</span></div>'+
+      '<div class="body"><div class="meta">'+p.wd+(p.up?' · Upayam '+p.up:'')+'</div><h3>'+p.title+'</h3><p>'+p.details+'</p></div>'+
+    '</div>';
+  }).join('');
+})();
+</script>
+<script src="app.js"></script>
+</body>
+</html>
