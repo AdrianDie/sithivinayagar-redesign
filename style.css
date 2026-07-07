@@ -132,6 +132,18 @@ body.lang-ta .brand-text span{letter-spacing:.02em;text-transform:none}
 .hamburger.open span:nth-child(2){opacity:0}
 .hamburger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
 
+/* Top state: header is transparent over the dark hero -> use light text/icons.
+   When scrolled, .scrolled adds a light background and the default dark colors apply. */
+.site-header:not(.scrolled) .brand-text b{color:#fff}
+.site-header:not(.scrolled) .brand-text span{color:var(--saffron-soft)}
+.site-header:not(.scrolled) .nav-desktop a{color:rgba(255,255,255,.9)}
+.site-header:not(.scrolled) .nav-desktop a:hover{color:#fff}
+.site-header:not(.scrolled) .nav-desktop a.active{color:#fff;background:rgba(255,255,255,.16)}
+.site-header:not(.scrolled) .lang-switch{background:rgba(255,255,255,.16)}
+.site-header:not(.scrolled) .lang-switch a{color:#fff}
+.site-header:not(.scrolled) .lang-switch a.active{background:#fff;color:var(--indigo-700)}
+.site-header:not(.scrolled) .hamburger span{background:#fff}
+
 /* Mobile drawer — sibling of header (NOT inside a backdrop-filter ancestor) */
 .drawer{
   position:fixed;inset:0 0 0 auto;width:min(86vw,380px);z-index:200;
